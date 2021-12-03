@@ -4,7 +4,7 @@ def day_1_1(file):
         solution = 0
         for i in range(1, len(content)):
             solution += int(content[i-1]) < int(content[i])
-        print(solution)
+        print("Solution 1.1: ", solution)
 
 
 def day_1_2(file):
@@ -17,7 +17,7 @@ def day_1_2(file):
             sum2 = sum(content[i-1:i+2])
             solution += sum1 < sum2
             sum1 = sum2
-        print(solution)
+        print("Solution 1.2: ", solution)
 
 
 day_1_1("files/input1.txt")

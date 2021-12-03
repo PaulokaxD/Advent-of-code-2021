@@ -10,7 +10,7 @@ def day_2_1(file):
                 depth += quantity
             elif kind == "up":
                 depth -= quantity
-        print(position*depth)
+        print("Solution 2.1: ", position*depth)
 
 
 def day_2_2(file):
@@ -26,7 +26,7 @@ def day_2_2(file):
                 aim += quantity
             elif kind == "up":
                 aim -= quantity
-        print(position*depth)
+        print("Solution 2.2: ", position*depth)
 
 
 day_2_1("files/input2.txt")
