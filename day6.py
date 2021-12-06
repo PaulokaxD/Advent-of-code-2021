@@ -10,7 +10,7 @@ def day_6_1(file, days):
                     newborns += 1
                 else:
                     fishes[i] -= 1
-            fishes = fishes + [8 for _ in range(newborns)]
+            fishes = fishes + [8]*newborns
         print(len(fishes))
 
 
