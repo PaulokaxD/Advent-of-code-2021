@@ -1,32 +1,6 @@
 import sys
 import numpy as np
 
-class Octopus:
-    flashed:bool
-    enery:int
-
-    def __init__(self, energy):
-        self.flashed = False
-        self.enery = energy
-
-    def flash(self):
-        self.flashed = True
-        self.enery = 0
-        for neighbor in self.neighbors:
-            neighbor.increment_energy()
-
-    def increment_energy(self):
-        self.enery += 1
-        if self.enery > 9 and not self.flashed:
-            self.flash()
-
-    def add_neighbors(self, list):
-        self.neighbors += list
-
-    def __repr__(self):
-        return f'{self.position}'
-
-
 def create_board(file):
     octopuses = []
     with open(file) as input:
