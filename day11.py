@@ -1,4 +1,3 @@
-import sys
 import numpy as np
 
 def create_board(file):
